@@ -1,0 +1,88 @@
+/*
+	 by Saddam Hussain
+	 http://huxxxen.com
+*/
+
+* { margin: 0; padding: 0; }
+body { font: 14px/1.4 Georgia, serif; }
+#page-wrap { width: 900px; margin: 0 auto; padding-top: 0px; padding-bottom: 20px}
+
+textarea { border: 0; font: 14px Georgia, Serif; overflow: hidden; resize: none; font-family:'Courier New';}
+table { border-collapse: collapse; }
+table td, table th { border: 1px solid black; padding: 5px; }
+
+#header { height: 15px; width: 100%; margin: 20px 0; background: #222; text-align: center; color: white; font: bold 15px Helvetica, Sans-Serif; text-decoration: uppercase; letter-spacing: 20px; padding: 8px 0px; }
+#address {
+    background: white;
+    height: 100px;
+    margin: 10px;
+    width: 250px;
+    float: left;
+}
+#customer { overflow: hidden; }
+
+#logo { text-align: right; float: right; position: relative; margin-top: 25px; border: 1px solid #fff; max-width: 540px; max-height: 100px; overflow: hidden; }
+#logo:hover, #logo.edit { border: 1px solid #000; margin-top: 0px; max-height: 125px; }
+#logoctr { display: none; }
+#logo:hover #logoctr, #logo.edit #logoctr { display: block; text-align: right; line-height: 25px; background: #eee; padding: 0 5px; }
+#logohelp { text-align: left; display: none; font-style: italic; padding: 10px 5px;}
+#logohelp input { margin-bottom: 5px; }
+.edit #logohelp { display: block; }
+.edit #save-logo, .edit #cancel-logo { display: inline; }
+.edit #image, #save-logo, #cancel-logo, .edit #change-logo, .edit #delete-logo { display: none; }
+#customer-title { font-size: 14px; font-weight: bold; float: left; background:#eee;}
+
+#meta { margin-top: 1px; width: 400px; float: right; right: 0 }
+#meta td { text-align: left;  margin-left: 10%;}
+#meta td input{
+	width: 90%;
+	margin-left: 10%;
+	text-align: left;
+	font-family: 'Courier New';
+	font-weight: 600;
+}
+#meta td.meta-head { text-align: left; background: #eee; }
+#meta td textarea { width: 100%; height: 20px; text-align: right; }
+
+#items { clear: both; width: 100%; margin: 30px 0 0 0; border: 1px solid black; }
+#items th { background: #eee; }
+#items textarea { font-family:'Courier New'; 
+	width:98%;
+	font-family: 'Courier New';
+	font-weight: 600;
+	border:none; 
+	text-align: center; 
+	padding: 3px;
+}
+input{
+	font-family: 'Courier New';
+	font-weight: 600;
+	border:none; 
+	text-align: center; 
+	padding: 3px;
+}
+
+
+#terms { text-align: center; margin: 20px 0 0 0; }
+#terms h5 { text-transform: uppercase; font: 13px Helvetica, Sans-Serif; letter-spacing: 10px; border-bottom: 1px solid black; padding: 0 0 8px 0; margin: 0 0 8px 0; }
+#terms textarea { width: 100%; text-align: center;}
+
+
+textarea:hover, textarea:focus, #items td.total-value textarea:hover, #items td.total-value textarea:focus, .delete:hover { background-color:#EEFF88; }
+
+.delete-wpr { position: relative; }
+.delete { display: block; opacity:0.1;  position: absolute; background: #EEEEEE; padding: 0px 3px; border: 1px solid; border-radius:2px; top: -12px; left: -26px; }
+#addrow { display: block; opacity:0.2; text-decoration:none;text-align:center; height:30px; font-size:20px; background: #EEEEEE; padding: 0px 3px; border: 1px solid; border-radius:2px; margin-top: -5px; }
+.delete:hover{
+	opacity: 1;
+	background:#FF8C00;
+}
+#addrow:hover{
+	opacity: 1;
+	background:dodgerblue;
+	color:white;
+}
+#items tr:hover .delete{
+	opacity: 1;
+	background:#FF8C00;
+}
