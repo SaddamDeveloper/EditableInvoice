@@ -1,4 +1,5 @@
 <?php
+//Database Check
 	include_once('db.php');
 		while(true)
 	{
