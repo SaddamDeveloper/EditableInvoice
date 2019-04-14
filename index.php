@@ -35,15 +35,11 @@
 
 		<textarea id="header">TAX INVOICE</textarea>
 		
-		<span style="font-size: 12px; font-weight:800;">Name & Address of Srvice Provider:</span>
+		<span style="font-size: 12px; font-weight:800;">Name & Address of Shop:</span>
 		<div id="identity">
-            <div id="address">D. Das & Associates: Chartered Accountants: 1st Floor, Hotel Utsav Building Above Book Stall, Jail Road, Shillong-793001</div>
+            <div id="address">Imran Hossain, Three Bothers Computer Lab, Satrakanara Bazar (Near Maszid)</div>
 
             <table id="meta">
-            	 <tr>
-                    <td class='meta-head'>GSTIN:</td>
-                    <td><input type="text" readonly id="gstin" value="17AAJFD4695B1ZE"></td>
-                </tr>
                 <tr>
                     <td class="meta-head">INVOICE NO:</td>
                     <td><input type="text" readonly id="invoice_no"></td>
@@ -68,30 +64,25 @@
 			<tr>
 				<td></td>
 				<td>
-								<span style="font-size: 12px;">Being the Fees Charged for audit of CSD Trade Surplus Fund accounts along with the GST @18%</span>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-							GSTIN: N/A
+					<span style="font-size: 12px;">Being the Fees Charged for audit of CSD Trade Surplus Fund accounts along with the GST @18%</span>
 				</td>
 			</tr>
 		</table>
 		<table id="items">
 		  <tr>
 		  	<th>Sl.No</th>
-		      <th style="width:20%;">SAC</th>
 		      <th style="width:40%;">Description</th>
-		      <th style="width:25%;">Period Of Service</th>
+		      <th style="width:20%;">Quantity</th>
+		      <th style="width:25%;">Rate</th>
 		      <th style="width:10%;">Amount(RS)</th>
 		  </tr>
 		  <div>
 		  <tr class="item-row" id="row1">
 		  	<td>1</td>
-		      <td class="item-name"><div class="delete-wpr"><div style="text-align: center;"><input type="text" value="998221" id="sac1" readonly></div><a class="delete" href="javascript:;" title="Remove row"><img src="images/cross.png" width="12px"></a></div></td>
-		      <td class="description"><textarea class="description requiredField" placeholder="Description" id="description1"></textarea></td>
-		      <td class="pos"><textarea class="pos requiredField" placeholder="" id="pos1"></textarea></td>
-		      <td><textarea class="amount requiredField" id="amount1" placeholder="₹ 0.00" onkeypress="return isNumberKey(event,this)"></textarea></td>
+		      <td class="item-name"><div class="delete-wpr"><div style="text-align: center;"><textarea class="description requiredField" placeholder="Description" id="description1"></textarea></div><a class="delete" href="javascript:;" title="Remove row"><img src="images/cross.png" width="12px"></a></div></td>
+		      <td ><textarea class="qty requireField" id="qty1"></textarea></td>
+		      <td><textarea class="rate requiredField" placeholder="" id="rate1"></textarea></td>
+		      <td><input type="text" readonly class="amount" id="amount1" placeholder="₹ 0.00"></td>
 		  </tr>
 		  </div>
 		  <tr id="hiderow">

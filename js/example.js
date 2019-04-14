@@ -63,7 +63,7 @@ if ($(".delete").length < 2) $(".delete").hide();
   $("#addrow").click(function(){
     invoicerows++;
     i=invoicerows;
-    $(".item-row:last").after('<tr class="item-row"><td>'+i+'</td><td class="item-name"><div class="delete-wpr"><input type="text" readonly value="9982134" id="sac'+i+'"><a class="delete" href="javascript:;" title="Remove row"><img src="images/cross.png" width="12px"></a></div></td><td><textarea placeholder="Description" id="description'+i+'"></textarea></td><td><textarea class="pos" id="pos'+i+'" placeholder=""></textarea></td><td><textarea class="amount" id="amount'+i+'" placeholder="₹ 0.00" onkeypress="return isNumberKey(event,this)"></textarea></td></tr>');
+    $(".item-row:last").after('<tr class="item-row"><td>'+i+'</td><td class="item-name"><div class="delete-wpr"><textarea class="description requiredField" placeholder="Description" id="description'+i+'"></textarea><a class="delete" href="javascript:;" title="Remove row"><img src="images/cross.png" width="12px"></a></div></td><td><textarea class="qty requireField" id="qty'+i+'"></textarea></td><td><textarea class="rate" id="rate'+i+'" placeholder=""></textarea></td><td><input type="text" readonly class="amount" id="amount1" placeholder="₹ 0.00"></td></tr>');
     if ($(".delete").length > 0) $(".delete").show();
   });
   
